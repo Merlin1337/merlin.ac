@@ -23,7 +23,7 @@ export default function ProjectsPage() {
                     <div>
                         <Link href="https://plug.army">
                             <div className="relative overflow-hidden rounded-2xl w-full h-[30rem] transition-transform ease-in-out duration-500 hover:scale-95">
-                                <Image width={592} height={480} src="/plug_mockups.png" className="overflow-hidden transition-transform ease-in-out duration-500 hover:scale-110 object-cover w-full h-full" alt="Plug™ App" />
+                                <Image width={592} height={480} src="/plug_mockups.svg" className="overflow-hidden transition-transform ease-in-out duration-500 hover:scale-110 object-cover w-full h-full" alt="Plug™ App" />
                             </div>
                             <div className="flex flex-col justify-center items-center mt-4">
                                 <div className="font-medium">Plug™</div>
@@ -44,7 +44,7 @@ export default function ProjectsPage() {
                     <div>
                         <Link href="https://spotilabs.fr">
                             <div className="relative overflow-hidden rounded-2xl w-full h-[30rem] transition-transform ease-in-out duration-500 hover:scale-95">
-                            <Image width={592} height={480} src="/spotilabs_mockup.png" className="overflow-hidden transition-transform ease-in-out duration-500 hover:scale-110 object-cover w-full h-full" alt="Spotilabs Website" />
+                            <Image width={592} height={480} src="/spotilabs_mockup.svg" className="overflow-hidden transition-transform ease-in-out duration-500 hover:scale-110 object-cover w-full h-full" alt="Spotilabs Website" />
                             </div>
                             <div className="flex flex-col justify-center items-center mt-4">
                                 <div className="font-medium">Spotilabs</div>

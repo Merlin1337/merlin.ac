@@ -44,7 +44,7 @@ export default function Home() {
         </h2>
         <Link href="https://naiart.fr" target="_blank" className="ease-in-out transition-transform hover:scale-110 duration-700 mt-2">
           <Image
-            src="/naiart.png"
+            src="/naiart.svg"
             alt="Naiart logo"
             width={133}
             height={24}
