@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const socials = [
 	{
-		icon: <Image src="/linkedin.svg" width={20} className="filter brightness-0 invert" alt="LinkedIn logo" />,
+		icon: <Image src="/linkedin.svg" width={20} height={20} className="filter brightness-0 invert" alt="LinkedIn logo" />,
 		href: "https://www.linkedin.com/in/merlin-caromel/",
 		label: "LinkedIn",
 		handle: "Merlin Caromel",
@@ -18,7 +18,7 @@ const socials = [
 		handle: "hello@merlin.ac",
 	},
 	{
-		icon: <Image src="/github.svg" width={20} className="filter brightness-0 invert" alt="GitHub logo" />,
+		icon: <Image src="/github.svg" width={20} height={20} className="filter brightness-0 invert" alt="GitHub logo" />,
 		href: "https://github.com/merlin1337",
 		label: "GitHub",
 		handle: "merlin1337",
