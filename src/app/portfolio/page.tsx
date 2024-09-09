@@ -1,6 +1,7 @@
 import React from "react";
 import { Navigation } from "../components/nav";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function ProjectsPage() {
     return (
@@ -22,7 +23,7 @@ export default function ProjectsPage() {
                     <div>
                         <Link href="https://plug.army">
                             <div className="relative overflow-hidden rounded-2xl w-full h-[30rem] transition-transform ease-in-out duration-500 hover:scale-95">
-                                <img src="/plug_mockups.png" className="overflow-hidden transition-transform ease-in-out duration-500 hover:scale-110 object-cover w-full h-full" />
+                                <Image src="/plug_mockups.png" className="overflow-hidden transition-transform ease-in-out duration-500 hover:scale-110 object-cover w-full h-full" />
                             </div>
                             <div className="flex flex-col justify-center items-center mt-4">
                                 <div className="font-medium">Plug™</div>
@@ -43,7 +44,7 @@ export default function ProjectsPage() {
                     <div>
                         <Link href="https://spotilabs.fr">
                             <div className="relative overflow-hidden rounded-2xl w-full h-[30rem] transition-transform ease-in-out duration-500 hover:scale-95">
-                                <img src="/spotilabs_mockup.png" className="overflow-hidden transition-transform ease-in-out duration-500 hover:scale-110 object-cover w-full h-full" />
+                                <Image src="/spotilabs_mockup.png" className="overflow-hidden transition-transform ease-in-out duration-500 hover:scale-110 object-cover w-full h-full" />
                             </div>
                             <div className="flex flex-col justify-center items-center mt-4">
                                 <div className="font-medium">Spotilabs</div>

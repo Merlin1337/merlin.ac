@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Particles from "./components/particles";
+import Image from "next/image";
 
 const navigation = [
   { name: "Portfolio", href: "/portfolio" },
@@ -42,7 +43,7 @@ export default function Home() {
           <span aria-hidden="true" className="absolute top-0 left-0 w-full h-full glitch-text-2"></span>
         </h2>
         <Link href="https://naiart.fr" target="_blank" className="ease-in-out transition-transform hover:scale-110 duration-700 mt-2">
-          <img
+          <Image
             src="https://i.imgur.com/hQMTysD.png"
             alt=""
             className="h-6 hover:opacity-70 ease-in-out transition-opacity duration-500 opacity-35"

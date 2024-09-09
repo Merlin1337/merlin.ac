@@ -2,10 +2,11 @@
 import { Mail } from "lucide-react";
 import Link from "next/link";
 import { Navigation } from "../components/nav";
+import Image from "next/image";
 
 const socials = [
 	{
-		icon: <img src="/linkedin.svg" width={20} className="filter brightness-0 invert" />,
+		icon: <Image src="/linkedin.svg" width={20} className="filter brightness-0 invert" />,
 		href: "https://www.linkedin.com/in/merlin-caromel/",
 		label: "LinkedIn",
 		handle: "Merlin Caromel",
@@ -17,7 +18,7 @@ const socials = [
 		handle: "hello@merlin.ac",
 	},
 	{
-		icon: <img src="/github.svg" width={20} className="filter brightness-0 invert" />,
+		icon: <Image src="/github.svg" width={20} className="filter brightness-0 invert" />,
 		href: "https://github.com/merlin1337",
 		label: "GitHub",
 		handle: "merlin1337",
