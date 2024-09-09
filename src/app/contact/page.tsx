@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const socials = [
 	{
-		icon: <Image src="/linkedin.svg" width={20} className="filter brightness-0 invert" />,
+		icon: <Image src="/linkedin.svg" width={20} className="filter brightness-0 invert" alt="LinkedIn logo" />,
 		href: "https://www.linkedin.com/in/merlin-caromel/",
 		label: "LinkedIn",
 		handle: "Merlin Caromel",
@@ -18,7 +18,7 @@ const socials = [
 		handle: "hello@merlin.ac",
 	},
 	{
-		icon: <Image src="/github.svg" width={20} className="filter brightness-0 invert" />,
+		icon: <Image src="/github.svg" width={20} className="filter brightness-0 invert" alt="GitHub logo" />,
 		href: "https://github.com/merlin1337",
 		label: "GitHub",
 		handle: "merlin1337",
@@ -32,7 +32,7 @@ export default function Contact() {
 			<div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
 				<div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16">
 					{socials.map((s) => (
-						<div className="overflow-hidden relative duration-700 border rounded-xl border-zinc-600 transform transition hover:scale-105">
+						<div className="overflow-hidden relative duration-700 border rounded-xl border-zinc-600 transform transition hover:scale-105" key={s.label}>
 							<Link
 								href={s.href}
 								target="_blank"

@@ -23,7 +23,7 @@ export default function ProjectsPage() {
                     <div>
                         <Link href="https://plug.army">
                             <div className="relative overflow-hidden rounded-2xl w-full h-[30rem] transition-transform ease-in-out duration-500 hover:scale-95">
-                                <Image src="/plug_mockups.png" className="overflow-hidden transition-transform ease-in-out duration-500 hover:scale-110 object-cover w-full h-full" />
+                                <Image src="/plug_mockups.png" className="overflow-hidden transition-transform ease-in-out duration-500 hover:scale-110 object-cover w-full h-full" alt="Plug™ App" />
                             </div>
                             <div className="flex flex-col justify-center items-center mt-4">
                                 <div className="font-medium">Plug™</div>
@@ -44,11 +44,11 @@ export default function ProjectsPage() {
                     <div>
                         <Link href="https://spotilabs.fr">
                             <div className="relative overflow-hidden rounded-2xl w-full h-[30rem] transition-transform ease-in-out duration-500 hover:scale-95">
-                                <Image src="/spotilabs_mockup.png" className="overflow-hidden transition-transform ease-in-out duration-500 hover:scale-110 object-cover w-full h-full" />
+                                <Image src="/spotilabs_mockup.png" className="overflow-hidden transition-transform ease-in-out duration-500 hover:scale-110 object-cover w-full h-full" alt="Spotilabs Website" />
                             </div>
                             <div className="flex flex-col justify-center items-center mt-4">
                                 <div className="font-medium">Spotilabs</div>
-                                <div className="font-normal text-zinc-300">The ultimate service for boosting artists' visibility.</div>
+                                <div className="font-normal text-zinc-300">The ultimate service for boosting artists&apos; visibility.</div>
                             </div>
                         </Link>
 
