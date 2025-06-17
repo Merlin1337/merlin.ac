@@ -1,6 +1,6 @@
 import React from "react";
 import { Navigation } from "../components/nav";
-import { Code, Database, Palette, Settings, Globe, Wrench, Rocket, Users, TrendingUp, Trophy, ExternalLink } from "lucide-react";
+import { Code, Database, Palette, Wrench, Rocket, Users, TrendingUp, Trophy, ExternalLink } from "lucide-react";
 import Link from "next/link";
 
 // Compétences basées sur les projets réels
