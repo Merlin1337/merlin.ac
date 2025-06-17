@@ -4,7 +4,11 @@ import Particles from "./components/particles";
 import Image from "next/image";
 
 const navigation = [
-  { name: "Portfolio", href: "/portfolio" },
+  { name: "À propos", href: "/about" },
+  { name: "Expériences", href: "/experiences" },
+  { name: "Projets", href: "/portfolio" },
+  { name: "Compétences", href: "/skills" },
+  { name: "Avenir", href: "/future" },
   { name: "Contact", href: "/contact" },
 ];
 
