@@ -4,33 +4,33 @@ import { Rocket, Target, Globe, Code, Users, Trophy, Star, BookOpen, Zap } from 
 
 const futureGoals = [
     {
-        title: "Maîtrise du Cloud & DevOps",
-        description: "Développer une expertise pointue en architecture cloud pour scaler mes projets à l'international",
-        technologies: ["AWS", "Docker", "Kubernetes", "Terraform", "CI/CD"],
+        title: "Approfondissement Cloud & DevOps",
+        description: "Améliorer mes compétences en architecture cloud pour mieux gérer mes projets",
+        technologies: ["AWS", "Docker", "Kubernetes", "CI/CD"],
         timeline: "2024-2025",
         color: "from-green-500 to-emerald-500",
         icon: Globe
     },
     {
-        title: "Excellence en Mobile UI/UX",
-        description: "Perfectionner mes compétences en développement mobile et design d'expérience utilisateur",
-        technologies: ["React Native", "Flutter", "Figma", "Design Systems", "User Research"],
+        title: "Amélioration en Mobile & UX",
+        description: "Continuer à progresser en développement mobile et design d'interface",
+        technologies: ["React Native", "Flutter", "Figma", "Design Systems"],
         timeline: "2024",
         color: "from-blue-500 to-cyan-500",
         icon: Code
     },
     {
-        title: "Expansion Entrepreneuriale",
-        description: "Développer et scaler mes projets actuels pour créer des entreprises rentables et influentes",
-        technologies: ["Business Strategy", "Product Management", "Growth Hacking", "Fundraising"],
+        title: "Développement de projets",
+        description: "Faire grandir mes projets actuels de manière durable",
+        technologies: ["Product Management", "Growth", "Analytics"],
         timeline: "En continu",
         color: "from-purple-500 to-pink-500",
         icon: Rocket
     },
     {
-        title: "Leadership Tech",
-        description: "Consolider mon rôle de Lead Tech et bâtir des équipes techniques de classe mondiale",
-        technologies: ["Technical Leadership", "Team Building", "Architecture", "Innovation"],
+        title: "Évolution en Lead Tech",
+        description: "Continuer à développer mes compétences de leadership technique",
+        technologies: ["Technical Leadership", "Team Management", "Architecture"],
         timeline: "En continu",
         color: "from-orange-500 to-red-500",
         icon: Users
@@ -39,47 +39,40 @@ const futureGoals = [
 
 const upcomingProjects = [
     {
-        title: "Expansion Internationale Tunefy",
-        description: "Scaler Tunefy au niveau international avec une architecture cloud robuste et une stratégie de croissance agressive",
+        title: "Évolution d'Offcall",
+        description: "Améliorer la plateforme et peut-être ajouter de nouvelles fonctionnalités",
         status: "En développement",
-        impact: "High",
-        color: "from-purple-500 to-pink-500"
-    },
-    {
-        title: "Swipe Media Empire",
-        description: "Transformer Swipe en un empire médiatique avec de multiples revenus et une audience globale",
-        status: "En expansion",
-        impact: "High",
+        impact: "Medium",
         color: "from-blue-500 to-cyan-500"
     },
     {
-        title: "Nouvelle Startup Secrète",
-        description: "Développement d'une nouvelle plateforme révolutionnaire dans le secteur des créateurs de contenu",
-        status: "Stealth Mode",
-        impact: "High",
+        title: "Projets personnels",
+        description: "Continuer à expérimenter avec des petits projets pour apprendre",
+        status: "En cours",
+        impact: "Low",
         color: "from-green-500 to-emerald-500"
     }
 ];
 
 const visionItems = [
     {
-        title: "Domination Technologique",
-        description: "Créer des solutions qui définissent les standards de l'industrie",
+        title: "Amélioration technique",
+        description: "Continuer à progresser techniquement et apprendre de nouvelles choses",
         icon: Rocket
     },
     {
-        title: "Écosystème d'Entreprises",
-        description: "Bâtir un portefeuille d'entreprises rentables et influentes",
+        title: "Projets durables",
+        description: "Créer des projets qui ont un impact positif et qui durent",
         icon: Target
     },
     {
-        title: "Excellence Opérationnelle",
-        description: "Maintenir les plus hauts standards de qualité et de performance",
+        title: "Travail de qualité",
+        description: "Maintenir un bon niveau de qualité dans tout ce que je fais",
         icon: Trophy
     },
     {
-        title: "Croissance Stratégique",
-        description: "Développer continuellement de nouvelles opportunités de business",
+        title: "Apprentissage continu",
+        description: "Rester curieux et continuer à apprendre de nouvelles technologies",
         icon: BookOpen
     }
 ];
@@ -96,7 +89,7 @@ export default function FuturePage() {
                         Avenir
                     </h1>
                     <p className="mt-6 text-xl text-zinc-400">
-                        Mes objectifs, projets futurs et vision pour l&apos;avenir de la technologie
+                        Mes objectifs d&apos;apprentissage et projets à venir
                     </p>
                 </div>
 
@@ -125,7 +118,7 @@ export default function FuturePage() {
                     <div className="text-center mb-12">
                         <h2 className="text-3xl font-bold text-zinc-100 mb-4">Objectifs d&apos;apprentissage</h2>
                         <p className="text-zinc-400 max-w-2xl mx-auto">
-                            Les compétences et technologies que je souhaite maîtriser dans les prochaines années
+                            Les compétences que j&apos;aimerais développer dans les prochaines années
                         </p>
                     </div>
 
@@ -150,7 +143,7 @@ export default function FuturePage() {
                                     <p className="text-zinc-300 leading-relaxed mb-6">{goal.description}</p>
                                     
                                     <div className="space-y-3">
-                                        <h4 className="text-zinc-200 font-semibold text-sm">Technologies à apprendre</h4>
+                                        <h4 className="text-zinc-200 font-semibold text-sm">Technologies à approfondir</h4>
                                         <div className="flex flex-wrap gap-2">
                                             {goal.technologies.map((tech, techIndex) => (
                                                 <span key={techIndex} className="px-3 py-1 bg-zinc-800/50 text-zinc-300 rounded-full text-sm border border-zinc-700/50">
@@ -168,13 +161,13 @@ export default function FuturePage() {
                 {/* Upcoming Projects */}
                 <div className="mt-20">
                     <div className="text-center mb-12">
-                        <h2 className="text-3xl font-bold text-zinc-100 mb-4">Projets à venir</h2>
+                        <h2 className="text-3xl font-bold text-zinc-100 mb-4">Projets en cours</h2>
                         <p className="text-zinc-400 max-w-2xl mx-auto">
-                            Les projets innovants que je prévois de développer dans les mois à venir
+                            Les projets sur lesquels je travaille actuellement
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         {upcomingProjects.map((project, index) => (
                             <div key={index} className="relative p-6 rounded-2xl bg-zinc-900/50 backdrop-blur border border-zinc-800/50 hover:border-zinc-700/50 transition-all duration-500 group">
                                 <div className="space-y-4">
@@ -183,14 +176,15 @@ export default function FuturePage() {
                                         <div className="flex items-center gap-2">
                                             <span className={`px-2 py-1 rounded-full text-xs font-medium ${
                                                 project.status === 'En cours' ? 'bg-green-500/20 text-green-400' :
-                                                project.status === 'En conception' ? 'bg-blue-500/20 text-blue-400' :
+                                                project.status === 'En développement' ? 'bg-blue-500/20 text-blue-400' :
                                                 'bg-yellow-500/20 text-yellow-400'
                                             }`}>
                                                 {project.status}
                                             </span>
                                             <span className={`px-2 py-1 rounded-full text-xs font-medium ${
                                                 project.impact === 'High' ? 'bg-red-500/20 text-red-400' :
-                                                'bg-orange-500/20 text-orange-400'
+                                                project.impact === 'Medium' ? 'bg-orange-500/20 text-orange-400' :
+                                                'bg-green-500/20 text-green-400'
                                             }`}>
                                                 {project.impact} Impact
                                             </span>
@@ -211,32 +205,31 @@ export default function FuturePage() {
                         <div className="text-center max-w-4xl mx-auto">
                             <div className="flex items-center justify-center gap-3 mb-6">
                                 <Zap className="w-8 h-8 text-yellow-400" />
-                                <h3 className="text-3xl font-bold text-zinc-100">Ma vision pour 2030</h3>
+                                <h3 className="text-3xl font-bold text-zinc-100">Mes objectifs à long terme</h3>
                             </div>
                             
                             <div className="space-y-6 text-zinc-300 text-lg leading-relaxed">
                                 <p>
-                                    D&apos;ici 2030, je me vois à la tête d&apos;un <span className="text-white font-semibold">empire technologique</span> composé de plusieurs entreprises 
-                                    rentables qui dominent leurs secteurs respectifs.
+                                    Dans les prochaines années, j&apos;aimerais continuer à <span className="text-white font-semibold">progresser techniquement</span> et 
+                                    peut-être avoir l&apos;opportunité de travailler sur des projets plus ambitieux.
                                 </p>
                                 
                                 <p>
-                                    Mon objectif est de <span className="text-purple-400 font-semibold">transformer chacun de mes projets actuels en licornes</span>, 
-                                    en tirant parti de ma position de Lead Tech pour créer des produits révolutionnaires avec des architectures cloud 
-                                    ultra-performantes et des expériences utilisateur exceptionnelles.
+                                    Mon objectif est de <span className="text-purple-400 font-semibold">devenir un meilleur développeur</span> et 
+                                    de contribuer à des projets qui ont un impact positif. J&apos;aimerais aussi continuer à apprendre 
+                                    et rester à jour avec les nouvelles technologies.
                                 </p>
                                 
                                 <p>
-                                    Je vise à atteindre <span className="text-cyan-400 font-semibold">l&apos;indépendance financière totale</span> tout en 
-                                    révolutionnant l&apos;industrie des médias numériques et des plateformes créatives. 
-                                    Le succès entrepreneurial n&apos;est pas qu&apos;un rêve, c&apos;est un plan d&apos;action.
+                                    Idéalement, j&apos;aimerais atteindre <span className="text-cyan-400 font-semibold">une certaine stabilité</span> tout en 
+                                    continuant à faire des choses qui m&apos;intéressent. L&apos;important c&apos;est de rester passionné et de continuer à apprendre.
                                 </p>
                             </div>
 
                             <div className="mt-8 flex items-center justify-center">
                                 <div className="flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-purple-500/20 to-cyan-500/20 border border-purple-500/30">
                                     <Star className="w-5 h-5 text-yellow-400" />
-                                    <span className="text-zinc-200 font-medium">Lead Tech aujourd&apos;hui, empire demain</span>
+                                    <span className="text-zinc-200 font-medium">Une étape à la fois</span>
                                 </div>
                             </div>
                         </div>
