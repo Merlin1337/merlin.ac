@@ -1,7 +1,10 @@
+"use client"
+
 import React from "react";
 import { Navigation } from "../components/nav";
-import { CalendarDays, MapPin, Mail, Github, Linkedin, Music, Trophy, GraduationCap, Calendar } from "lucide-react";
+import { CalendarDays, MapPin, Mail, Github, Linkedin, Music, Trophy, GraduationCap, Calendar, Briefcase } from "lucide-react";
 import Link from "next/link";
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 export default function AboutPage() {
     return (
@@ -26,8 +29,19 @@ export default function AboutPage() {
                     
                     {/* Left Column - Personal Info */}
                     <div className="space-y-8">
-                        <div className="relative p-8 rounded-2xl bg-zinc-900/50 backdrop-blur border border-zinc-800/50 hover:border-zinc-700/50 transition-all duration-500">
+                        <div className="relative p-8 rounded-2xl bg-gradient-to-br from-zinc-900/50 via-zinc-900/20 to-white/20 backdrop-blur border border-zinc-800/50 hover:border-zinc-700/50 transition-all duration-500">
                             <h2 className="text-2xl font-bold text-zinc-100 mb-6">Informations personnelles</h2>
+                            
+                            {/* Lottie Animation - Coming out from bottom */}
+                            <div className="absolute -bottom-12 -right-4 opacity-80 hover:opacity-100 transition-opacity duration-300">
+                                <DotLottieReact
+                                    src="/assets/cat-mac-1750230416924.lottie"
+                                    loop
+                                    autoplay
+                                    width={150}
+                                    height={120}
+                                />
+                            </div>
                             
                             <div className="space-y-4">
                                 <div className="flex items-center gap-4 text-zinc-300">
@@ -37,7 +51,12 @@ export default function AboutPage() {
                                 
                                 <div className="flex items-center gap-4 text-zinc-300">
                                     <MapPin className="w-5 h-5 text-red-400" />
-                                    <span>Étudiant à l&apos;IUT de Vannes</span>
+                                    <span>Étudiant à l&apos;IUT Nice Côte d&apos;Azur</span>
+                                </div>
+                                
+                                <div className="flex items-center gap-4 text-zinc-300">
+                                    <Briefcase className="w-5 h-5 text-purple-400" />
+                                    <span>Alternance chez <Link href="https://naiart.fr" target="_blank" className="text-blue-400 hover:text-white transition-colors font-semibold">NAIART</Link></span>
                                 </div>
                                 
                                 <div className="flex items-center gap-4 text-zinc-300">
@@ -111,8 +130,8 @@ export default function AboutPage() {
                             <div className="space-y-4 text-zinc-300 leading-relaxed">
                                 <p>
                                     Salut ! Je suis <span className="text-white font-semibold">Merlin Caromel</span>, étudiant passionné en informatique de 20 ans. 
-                                    Actuellement en première année de BUT informatique à l&apos;IUT de Vannes, je me prépare à rejoindre 
-                                    l&apos;IUT Nice Côte d&apos;Azur en alternance.
+                                    Actuellement en BUT informatique à l&apos;IUT Nice Côte d&apos;Azur en alternance, après avoir validé 
+                                    ma première année à l&apos;IUT de Vannes.
                                 </p>
                                 
                                 <p>
